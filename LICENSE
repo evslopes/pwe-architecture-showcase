@@ -1,0 +1,19 @@
+Copyright (c) 2026 Everton Lopes / JHH Solutions (pwE — Pray With Me).
+All rights reserved.
+
+ARCHITECTURE SHOWCASE & REFERENCE LICENSE
+
+This repository ("pwe-architecture-showcase") is published exclusively for
+architectural evaluation, portfolio inspection, technical discussion, and
+issue tracking for the pwE (Pray With Me) platform (https://pwe.jhhsolutions.dev).
+
+1. Inspection & Evaluation:
+   You may view, read, and fork this repository for the purpose of evaluating
+   the software architecture, engineering practices, ADRs, and code slices.
+
+2. Intellectual Property Reservation:
+   The pwE brand, Sacred Design System visual identity, theological curations,
+   and production application remain the exclusive proprietary property of
+   JHH Solutions. Commercial redistribution, cloning, or derivative commercial
+   products based on these materials are not permitted without prior written
+   authorization.

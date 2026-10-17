@@ -1,0 +1,72 @@
+# ADRs (Architecture Decision Records)
+
+Este diretório registra decisões arquiteturais do projeto pwE (Pray With Me).
+
+## Índice
+- **ADR 0001** — Gerência de estado: ver [0001-gerencia-de-estado.md](0001-gerencia-de-estado.md)
+- **ADR 0002** — Refatoração UX / UI (Fluxo Imersivo e Fading Scaffolding): ver [0002-refactor-ux-ui.md](0002-refactor-ux-ui.md)
+- **ADR 0003** — RAG On-Device / Memória Contextual: ver [0003-rag-on-device.md](0003-rag-on-device.md)
+- **ADR 0004** — Arquitetura Limpa e DDD: ver [0004-arquitetura.md](0004-arquitetura.md)
+- **ADR 0005** — Estratégia de Inferência Local (Edge LLM - Gemma): ver [0005-edge-llm-strategy.md](0005-edge-llm-strategy.md)
+- **ADR 0006** — Estratégia de Embeddings Locais (BERT On-Device): ver [0006-local-embeddings-strategy.md](0006-local-embeddings-strategy.md)
+- **ADR 0007** — Mudança de Paradigma na Meditatio (Protagonista Ativa): ver [0007-meditatio-paradigm-shift.md](0007-meditatio-paradigm-shift.md)
+- **ADR 0008** — Unificação do Fluxo Imersivo e Release Google Play: ver [0008-unificacao-fluxo-leitura-imersiva.md](0008-unificacao-fluxo-leitura-imersiva.md)
+- **ADR 0009** — Arquitetura Distribuída (Dart Worker; hoje executado no GCP Cloud Run Job — ver nota de 04/10/2026), Otimização de Custos e Monetização Ética: ver [0009-arquitetura-distribuida-bff-e-monetizacao.md](0009-arquitetura-distribuida-bff-e-monetizacao.md)
+- **ADR 0010** — Observabilidade em Dupla Camada, Zero-Knowledge e Hardening do Caderno Espiritual: ver [0010-observabilidade-dupla-camada-e-privacidade-zero-knowledge.md](0010-observabilidade-dupla-camada-e-privacidade-zero-knowledge.md)
+- **ADR 0011** — Modernização da Passagem Livre, OCR Guiado e Paridade com a Leitura Litúrgica: ver [0011-modernizacao-passagem-livre-e-ocr-guiado.md](0011-modernizacao-passagem-livre-e-ocr-guiado.md)
+- **ADR 0012** — Redesenho Sacro, Dashboard Litúrgico Shalom e Orquestração Viva da Leitura: ver [0012-redesenho-sacro-dashboard-shalom-e-orquestracao-liturgica.md](0012-redesenho-sacro-dashboard-shalom-e-orquestracao-liturgica.md)
+- **ADR 0013** — Universalização do Design System Sacro e Internacionalização Quádrupla: ver [0013-design-system-sacro-integral-e-i18n-quadruplo.md](0013-design-system-sacro-integral-e-i18n-quadruplo.md)
+- **ADR 0014** — Unificação Terminológica do Caderno Espiritual e Componentes Compartilhados: ver [0014-unificacao-terminologica-caderno-espiritual-e-componentes-compartilhados.md](0014-unificacao-terminologica-caderno-espiritual-e-componentes-compartilhados.md)
+- **ADR 0015** — Decomposição do God BLoC (LectioBloc), Modularização de Parsers e Higiene da Arquitetura de Dados: ver [0015-decomposicao-god-bloc-e-higiene-arquitetura-dados.md](0015-decomposicao-god-bloc-e-higiene-arquitetura-dados.md)
+- **ADR 0016** — Integração do Firebase App Testing Agent (IA) e Enriquecimento Semântico para Testes E2E: ver [0016-firebase-app-testing-agent-e-acessibilidade-semantica.md](0016-firebase-app-testing-agent-e-acessibilidade-semantica.md)
+- **ADR 0017** — Padronização do RevenueCat, Resiliência de Entitlement e Precificação Multilíngue por Paridade de Poder de Compra (PPP): ver [0017-padronizacao-revenuecat-e-precificacao-multilingue.md](0017-padronizacao-revenuecat-e-precificacao-multilingue.md)
+- **ADR 0018** — Precedência Litúrgica Dominical Canônica, Omissão de Memórias e Unificação do Ciclo Bíblico: ver [0018-precedencia-liturgica-dominical-e-sucessao-canonica.md](0018-precedencia-liturgica-dominical-e-sucessao-canonica.md)
+- **ADR 0019** — Pipeline de Homologação Visual iOS no Appetize.io via Simulator Build: ver [0019-pipeline-ios-simulator-appetize.md](0019-pipeline-ios-simulator-appetize.md)
+- **ADR 0020** — Redesign da Startup Splash Screen e Ícones Adaptativos Católicos: ver [0020-redesign-startup-splash-e-icones-adaptativos.md](0020-redesign-startup-splash-e-icones-adaptativos.md)
+- **ADR 0021** — Integração do Marionette MCP e Interação em Tempo de Execução para Agentes de IA: ver [0021-marionette-mcp-e-interacao-em-tempo-de-execucao-para-agentes-ia.md](0021-marionette-mcp-e-interacao-em-tempo-de-execucao-para-agentes-ia.md)
+- **ADR 0022** — Sinalização de Conteúdo Gerado, Blindagem do Release e Transparência de Dados: ver [0022-sinalizacao-de-conteudo-blindagem-de-release-e-transparencia-de-dados.md](0022-sinalizacao-de-conteudo-blindagem-de-release-e-transparencia-de-dados.md)
+- **ADR 0023** — Guard de Autenticação Reativo e Exclusão de Conta sem Falhas Silenciosas: ver [0023-guard-de-autenticacao-reativo-e-exclusao-de-conta-sem-falhas-silenciosas.md](0023-guard-de-autenticacao-reativo-e-exclusao-de-conta-sem-falhas-silenciosas.md)
+- **ADR 0024** — Prontidão iOS, Bootstrap Enxuto, Domínio Puro e Higiene Documental: ver [0024-prontidao-ios-bootstrap-enxuto-dominio-puro-e-higiene-documental.md](0024-prontidao-ios-bootstrap-enxuto-dominio-puro-e-higiene-documental.md)
+- **ADR 0025** — Consentimento Explícito para IA em Nuvem: ver [0025-consentimento-explicito-para-ia-em-nuvem.md](0025-consentimento-explicito-para-ia-em-nuvem.md)
+- **ADR 0026** — Senha Opcional do Cofre de Chaves: ver [0026-senha-opcional-do-cofre-de-chaves.md](0026-senha-opcional-do-cofre-de-chaves.md)
+- **ADR 0027** — Remoção Física do `LectioBloc`: ver [0027-remocao-fisica-do-lectio-bloc.md](0027-remocao-fisica-do-lectio-bloc.md)
+- **ADR 0028** — Endurecimento das Regras do Firestore e do Storage: ver [0028-endurecimento-das-regras-firestore-e-storage.md](0028-endurecimento-das-regras-firestore-e-storage.md)
+- **ADR 0029** — Cifra em Repouso da Caixa Hive de Sessões: ver [0029-cifra-em-repouso-da-caixa-hive.md](0029-cifra-em-repouso-da-caixa-hive.md)
+- **ADR 0030** — Higiene de Erros Silenciosos e de Dependências: ver [0030-higiene-de-erros-silenciosos-e-dependencias.md](0030-higiene-de-erros-silenciosos-e-dependencias.md)
+- **ADR 0031** — Alinhamento Documental com o Código (código como fonte de verdade): ver [0031-alinhamento-documental-com-o-codigo.md](0031-alinhamento-documental-com-o-codigo.md)
+- **ADR 0032** — Higiene Arquitetural, Isolamento de Injeção de Dependências e Salvaguardas de Debug: ver [0032-higiene-arquitetural-isolamento-de-di-e-safeguards.md](0032-higiene-arquitetural-isolamento-de-di-e-safeguards.md)
+- **ADR 0033** — Harmonia Visual e Fluxo Contemplativo de Consentimento e Seleção de IA: ver [0033-harmonia-visual-e-fluxo-contemplativo-de-consentimento.md](0033-harmonia-visual-e-fluxo-contemplativo-de-consentimento.md)
+- **ADR 0034** — Arquitetura de Subagentes Assíncronos Nativos do Antigravity: ver [0034-arquitetura-de-subagentes-assincronos-antigravity.md](0034-arquitetura-de-subagentes-assincronos-antigravity.md)
+- **ADR 0035** — Seleção Pastoral de IA no Onboarding e Conformidade com as Lojas: ver [0035-selecao-pastoral-de-ia-no-onboarding-e-conformidade-com-lojas.md](0035-selecao-pastoral-de-ia-no-onboarding-e-conformidade-com-lojas.md)
+- **ADR 0036** — Landing Page Estática e Vitrine Institucional para SEO e Lojas: ver [0036-landing-page-estatica-e-vitrine-institucional-seo.md](0036-landing-page-estatica-e-vitrine-institucional-seo.md)
+- **ADR 0037** — Robustecimento e Conformidade dos Recursos Firebase na Versão Web: ver [0037-robustecimento-dos-recursos-firebase-na-web.md](0037-robustecimento-dos-recursos-firebase-na-web.md)
+- **ADR 0038** — Otimização FinOps dos Workflows de CI/CD e Eficiência de Cotas do GitHub Actions: ver [0038-otimizacao-finops-ci-cd-e-economia-de-cotas-actions.md](0038-otimizacao-finops-ci-cd-e-economia-de-cotas-actions.md)
+- **ADR 0039** — Isolamento Estrito de Chaves e Blindagem FinOps Multi-Projeto: ver [0039-isolamento-estrito-de-chaves-e-blindagem-finops-multi-projeto.md](0039-isolamento-estrito-de-chaves-e-blindagem-finops-multi-projeto.md)
+- **ADR 0040** — Lembretes Locais Agendados e Notificações Push FCM: ver [0040-lembretes-locais-agendados-e-notificacoes-push-fcm.md](0040-lembretes-locais-agendados-e-notificacoes-push-fcm.md)
+- **ADR 0041** — Estratégia Cache-First para Liturgia Diária e Persistência em Disco de Ícones Sacros: ver [0041-estrategia-cache-first-liturgia-e-persistencia-icones-sacros.md](0041-estrategia-cache-first-liturgia-e-persistencia-icones-sacros.md)
+- **ADR 0042** — Reconciliação Bidirecional Offline-First, Expurgo Local LGPD/GDPR, Inversão de Dependências Core e Prontidão Nativa para Lojas: ver [0042-reconciliacao-offline-first-expurgo-local-lgpd-e-prontidao-lojas.md](0042-reconciliacao-offline-first-expurgo-local-lgpd-e-prontidao-lojas.md)
+- **ADR 0043** — Otimização Cache-First na Navegação Litúrgica, Idempotência Parcial do Worker Cloud Run, Expurgo LGPD em Reports de IA e Fluidez de Inicialização: ver [0043-otimizacao-cache-first-idempotencia-worker-e-expurgo-lgpd-reports.md](0043-otimizacao-cache-first-idempotencia-worker-e-expurgo-lgpd-reports.md)
+- **ADR 0044** — Privacidade de Tela Configurável (Controle do Fiel) e Partilha Visual Evangelizadora de Cards Sacros: ver [0044-privacidade-de-tela-configuravel-e-partilha-sacra.md](0044-privacidade-de-tela-configuravel-e-partilha-sacra.md)
+- **ADR 0045** — Ferramentas de Automação de Engenharia (`pwe_release`, `i18n_sync`, `pwe_doctor`) e Matriz de Responsividade Multi-Viewport: ver [0045-automacao-dod-i18n-e-viewport-matrix.md](0045-automacao-dod-i18n-e-viewport-matrix.md)
+- **ADR 0046** — Governança Remota de Versões (`VersionGovernanceBanner`), Firebase GitOps (`remoteconfig.template.json` / `firestore.indexes.json`) e Quality Scores no Langfuse: ver [0046-governanca-remota-de-versao-e-langfuse-scores.md](0046-governanca-remota-de-versao-e-langfuse-scores.md)
+- **ADR 0047** — Arquitetura de Escala Zero-Cost (GCS Static CDN para Liturgia, Áudio TTS Compartilhado e Tópicos Litúrgicos FCM): ver [0047-offload-liturgia-gcs-cdn-e-shared-tts.md](0047-offload-liturgia-gcs-cdn-e-shared-tts.md)
+- **ADR 0048** — Paridade de Monetização Web (`RevenueCat Web Billing REST v1`) e Entrega Contínua Multiplataforma (Web `/app` + Landing + TestFlight iOS): ver [0048-revenuecat-web-billing-e-cd-multiplataforma.md](0048-revenuecat-web-billing-e-cd-multiplataforma.md)
+- **ADR 0049** — Orquestrador de Deploy Local no Google Play (`tool/pwe_local_deploy.dart` via Android Publisher API v3, Zero Minutos de CI): ver [0049-deploy-local-google-play-e-otimizacao-cota-ci.md](0049-deploy-local-google-play-e-otimizacao-cota-ci.md)
+- **ADR 0050** — Agente de Validação em Runtime (`perf-validator` via Marionette/Dart MCP) e Arquitetura da Documentação Técnica Mestre: ver [0050-validacao-runtime-perf-validator-e-documentacao-tecnica-mestre.md](0050-validacao-runtime-perf-validator-e-documentacao-tecnica-mestre.md)
+- **ADR 0051** — Repositório Público de Architecture Showcase (`pwe-architecture-showcase`) e Pipeline de Sanitização Automatizada (`tool/sync_showcase.dart`): ver [0051-repositorio-publico-architecture-showcase-e-sanitizacao-automatizada.md](0051-repositorio-publico-architecture-showcase-e-sanitizacao-automatizada.md)
+
+## Rastreabilidade de PRs (Histórico Adicional)
+- **Repositório Público de Architecture Showcase (`pwe-architecture-showcase`) & Sanitização Automatizada:** Outubro de 2026 (ADR 0051)
+- **Validação Runtime (`perf-validator`) & Documentação Técnica Mestre:** Outubro de 2026 (ADR 0050)
+- **Deploy Local Google Play Zero-CI (`pwe_local_deploy.dart`) & Monetização Web:** Outubro de 2026 (ADRs 0048, 0049)
+- **GCS Static CDN Offload, Áudio TTS Compartilhado & Governança Remota de Versões:** Outubro de 2026 (ADRs 0046, 0047)
+- **Pipeline iOS Simulator & Deploy Appetize.io:** Outubro de 2026, PR de Homologação Visual
+- **Precedência Litúrgica Dominical & Omissão de Memórias:** Setembro de 2026, PR #286
+- **Padronização RevenueCat & Precificação PPP:** Setembro de 2026, PR #285
+- **Firebase App Testing Agent & Semântica A11y:** Setembro de 2026, PR #282
+- **Migração para a API REST Oficial da CNBB:** Setembro de 2026, PR #211, PR #212
+- **Resiliência de IA e Fallback Patrístico Offline:** Setembro de 2026, PR #204
+- **Criptografia Resiliente e Proteção de Estado (Padding):** Setembro de 2026, PR #204
+- **Endurecimento de Segurança (DevSecOps) e Supply Chain:** Setembro de 2026, PR #202, PR #203
+- **Design Sacro e Shalom Dashboard:** Setembro de 2026, PR #197, PR #200
+- **Decomposição do God BLoC, Modularização de Parsers e Higiene da Arquitetura de Dados:** 23 de Setembro de 2026, Sprint de Higiene de Dados & Decomposição Arquitetural
